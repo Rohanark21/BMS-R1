@@ -1,0 +1,41 @@
+**************Help Websites********************
+
+https://www.youtube.com/watch?v=m08GSxWO1pQ&list=PLu0W_9lII9agwhy658ZPA0MTStKUJTWPi&index=12
+https://www.golinuxcloud.com/git-command-cheat-sheet/
+https://www.golinuxcloud.com/set-up-github-with-visual-studio-code/
+
+
+***************SSH Key generation steps/commands *****************
+
+-ssh-keygen -t ed25519 -C "oceans.rohan@gmail.com"
+-eval "$(ssh-agent -s)"
+-ssh-add ~/.ssh/id_ed25519
+-tail ~/.ssh/id_ed25519.pub or clip < ~/.ssh/id_ed25519.pub
+
+
+
+These are GitHub's public key fingerprints:
+
+SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8 (RSA)
+SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM (ECDSA)
+SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU (Ed25519)
+
+
+
+************creating a repository********************
+
+(create a new repository on the command line)
+
+echo "# sample" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Rohanark21/sample.git
+git push -u origin main
+
+(or push an existing repository from the command line)
+
+git remote add origin https://github.com/Rohanark21/sample.git
+git branch -M main
+git push -u origin main
