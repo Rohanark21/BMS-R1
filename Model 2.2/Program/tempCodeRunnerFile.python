@@ -1,0 +1,28 @@
+import numpy as np
+import pandas as pd
+from SOCfromOCVtemp import SOCfromOCVtemp
+
+script1=pd.read_excel("PANdata_P25.xlsx")
+model=pd.read_excel("PANmodel.xlsx")
+
+T=25
+eta=script1['eta']
+voltage=script1['voltage']
+current=script1['current']
+time=script1['time']
+soc=script1['soc']
+deltat = time[1]-time[0]
+time    = time-time[0]  
+
+
+spkfData = pd.DataFrame()     
+ir0 = 0                             
+hk0 = 0                           
+SOC0 = SOCfromOCVtemp(voltage,T,model)
+spkfData['irInd'] = 0
+spkfData['hkInd'] = 1
+spkfData['zkInd'] = 2
+spkfData['xhat'] = np.array([ir0,hk0])                    # initial state
+spkfData['xhat'] = np.append(spkfData['xhat'],SOC0)
+print("data")
+ 

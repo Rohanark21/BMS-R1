@@ -1,0 +1,1 @@
+formatted=["%.3f" % i for i in A5]
