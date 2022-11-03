@@ -3,6 +3,7 @@
 https://www.youtube.com/watch?v=m08GSxWO1pQ&list=PLu0W_9lII9agwhy658ZPA0MTStKUJTWPi&index=12
 https://www.golinuxcloud.com/git-command-cheat-sheet/
 https://www.golinuxcloud.com/set-up-github-with-visual-studio-code/
+http://git-cheatsheet.com/
 
 
 ***************SSH Key generation steps/commands *****************
