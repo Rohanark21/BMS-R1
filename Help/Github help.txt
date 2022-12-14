@@ -44,5 +44,6 @@ SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU (Ed25519)
 
 ***********command*****************
 
--git config --global alias.gc commit (replaces git commit)
--git config --global alias.ga add (replaces git add)
+-git config --global alias.cc commit (replaces git commit)
+-git config --global alias.aa add (replaces git add)
+git config --global --unset alias.aa (deletes alias)
